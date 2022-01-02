@@ -358,7 +358,7 @@ body {
 }
 @media screen and (min-width: 375px) {
   .mesagge__title {
-    font-size: 1.7rem;
+    font-size: 2.4rem;
   }
 }
 .mesagge::after {
