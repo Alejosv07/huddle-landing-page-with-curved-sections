@@ -11,7 +11,7 @@ $shadow: 0 2px 6px rgba(0,0,0,0.5);
     box-shadow: $shadow;
     
     @media screen and (min-width: 376px){
-        padding: 1em 4.5em;
+        padding: 1.4em 6.9em;
         margin-bottom: 3em;
         font-size: 1rem;
     }
@@ -31,6 +31,7 @@ $shadow: 0 2px 6px rgba(0,0,0,0.5);
     }
     
     &--colors{
+        font-weight: bold;
         background-color: c.$Pink;
         color: c.$VeryPaleBlue;
     }
