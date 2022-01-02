@@ -6,6 +6,13 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/index.css">
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 </head>
 <body>
@@ -29,10 +36,10 @@
     <section class="hero">
       <h1 class="hero__title">Build The Community Your Fans Will Love</h1>
       <p class="hero__legend">
-        huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.
       </p>
-      <a href="#" class="cto cto--colors">Get Started For Free</a>
-      <figure class="figure">
+      <a href="#" class="hero__btn cto cto--colors">Get Started For Free</a>
+      <figure class="figure hero__img">
         <img src="images/screen-mockups.svg" alt="hero img" class="img">
       </figure>
     </section>
@@ -40,6 +47,7 @@
 
     <!-- section numbers -->
     <section class="section--nums">
+      
       <div class="card">
         <figure class="card__img"><img src="images/icon-communities.svg" alt="" class="img"></figure>
         <h2 class="card__data">
@@ -47,6 +55,7 @@
         </h2>
         <p class="card__text">Communities Formed</p>
       </div>
+      
       <div class="card">
         <figure class="card__img"><img src="images/icon-messages.svg" alt="" class="img"></figure>
         <h2 class="card__data">
@@ -54,6 +63,7 @@
         </h2>
         <p class="card__text">Messages Sent</p>
       </div>
+    
     </section>
     <!-- end section numbers -->
     
@@ -64,10 +74,10 @@
         <p class="section__text">
           Generate meanungful discussion with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.
         </p>
-        <figure class="section__img">
-          <img src="images/illustration-grow-together.svg" alt="" class="img">
-        </figure>
       </div>
+      <figure class="section__img">
+        <img src="images/illustration-grow-together.svg" alt="" class="img">
+      </figure>
     </section>
     
     <section class="section--left">
@@ -76,28 +86,28 @@
         <p class="section__text">
           You wouldn't paginate a conversation in real life, so why do ot online?Our threads have just-in-time loading for a more natural flow.
         </p>
-        <figure class="section__img">
-          <img src="images/illustration-your-users.svg" alt="" class="img">
-        </figure>
       </div>
+      <figure class="section__img">
+        <img src="images/illustration-flowing-conversation.svg" alt="" class="img">
+      </figure>
     </section>
 
     <section class="section--right">
       <div class="section__texts">
         <h3 class="section__title">Your Users</h3>
         <p class="section__text">
-          It takes no time at all to integrate Huddle with your app's autentication solution. This means, once signed in to your app, y=your users can start chatting inmediately.
+          It takes no time at all to integrate Huddle with your app's autentication solution. This means, once signed in to your app, your users can start chatting inmediately.
         </p>
-        <figure class="section__img">
-          <img src="images/illustration-your-users.svg" alt="" class="img">
-        </figure>
       </div>
+      <figure class="section__img">
+        <img src="images/illustration-your-users.svg" alt="" class="img">
+      </figure>
     </section>
     <!-- end section -->
 
     <!-- message -->
     <div class="mesagge">
-      <h2 class="messagge__title">Ready To Build Your Community?</h2>
+      <h2 class="mesagge__title">Ready To Build Your Community?</h2>
       <a href="#" class="cto cto--colors">Get Started For Free</a>
     </div>
     <!-- end message -->
@@ -108,25 +118,27 @@
       <figure class="figure">
         <img src="images/logo.svg" alt="logo img">
       </figure>
-      <p class="footer__information__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi sed assumenda perspiciatis nulla iusto fuga earum. Repellendus iusto amet quaerat voluptates, laudantium doloribus voluptas pariatur cupiditate facere dolores error sed.</p>
-    </div>
-    <div class="box">
-      <img src="images/icon-phone.svg" alt="img phone" class="box__img">
-      <p class="box__text">Phone: +1-543+123-4567</p>
-    </div>
-    <div class="box">
-      <img src="images/icon-email.svg" alt="img email" class="box__img">
-      <p class="box__text">example@huddle.com</p>
-    </div>
-    <div class="social">
-
+      <p class="footer__information__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+      <div class="box">
+        <img src="images/icon-phone.svg" alt="img phone" class="box__img">
+        <p class="box__text">Phone: +1-543+123-4567</p>
+      </div>
+      <div class="box">
+        <img src="images/icon-email.svg" alt="img email" class="box__img">
+        <p class="box__text">example@huddle.com</p>
+      </div>
+      <div class="social">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter-square"></i>
+      </div>
     </div>
     <div class="footer__subscribe">
-      <p class="footer__subscribe__title">NEWSLETTER</p>
+      <h3 class="footer__subscribe__title">NEWSLETTER</h3>
       <p class="footer__subscribe__description">
-        To recieve tips on how to grow yout community, sign uo to our weekly newsletter. We'll nevew send you span or pass on your email address.
+        To recieve tips on how to grow your community, sign up to our weekly newsletter. We'll never send you spam or pass on your email address
       </p>
-      <form action="#" class="form__subscribe" method="post">
+      <form action="#" class="footer__subscribe__form" method="post">
         <input type="text" class="input">
         <button type="submit" class="cto--small cto--colors">Subscribe</button>
       </form>

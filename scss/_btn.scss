@@ -1,0 +1,44 @@
+@use "color" as c;
+
+$borderRadius: 24px;
+$shadow: 0 2px 6px rgba(0,0,0,0.5);
+
+.cto{
+    cursor: pointer;
+    padding: 1em 2em;
+    text-decoration: none;
+    border-radius: $borderRadius;
+    box-shadow: $shadow;
+    
+    @media screen and (min-width: 376px){
+        padding: 1em 4.5em;
+        margin-bottom: 3em;
+        font-size: 1rem;
+    }
+    &--empty{
+        padding: 0.5em 1.5em;
+        border: 1px solid c.$Pink;
+        border-radius: $borderRadius;
+        color: c.$Pink;
+        background-color: c.$VeryPaleBlue;
+        font-size: 0.9rem;
+        text-decoration: none;
+        
+        &:hover{
+            background-color: c.$Pink;
+            color: c.$VeryPaleBlue;
+        }
+    }
+    
+    &--colors{
+        background-color: c.$Pink;
+        color: c.$VeryPaleBlue;
+    }
+    
+    &--small{
+        border: 0;
+        margin: 0;
+        padding: 0.5em 1em;
+        border-radius: 4px;
+    }
+}

@@ -1,0 +1,74 @@
+$font-body: 'Open Sans', sans-serif;
+$font-title: 'Poppins', sans-serif;
+
+.section{
+    &--right{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8rem;
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+            align-items: center;
+        }
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    &__img{
+        @media screen and (min-width: 768px){
+            order: 1;
+            flex: 1;
+        }
+        order: -1;
+    }
+    &__texts{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2em;
+        @media screen and (min-width: 768px){
+            align-items: flex-start;
+        }
+    }
+    &__title{
+        text-align: center;
+        font-family: $font-title;
+        @media screen and (min-width: 376px){
+            font-size: 2.5rem;
+            margin: 0;
+        }
+    }
+    &__text{
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        @media screen and (min-width: 1023px){
+            font-size: 1rem;
+            text-align: left;
+            width: 500px;
+        }
+    }
+    &--left{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10rem;
+        
+        @media screen and (min-width: 768px){
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        &>.section__img{
+            @media screen and (min-width: 376px){
+                order: -1;
+            }
+        }
+        &>.section__texts>.section__text{
+            @media screen and (min-width: 768px){
+                width: 540px;
+            }
+        }
+
+    }
+}

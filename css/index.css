@@ -1,0 +1,378 @@
+.cto {
+  cursor: pointer;
+  padding: 1em 2em;
+  text-decoration: none;
+  border-radius: 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+@media screen and (min-width: 376px) {
+  .cto {
+    padding: 1em 4.5em;
+    margin-bottom: 3em;
+    font-size: 1rem;
+  }
+}
+.cto--empty {
+  padding: 0.5em 1.5em;
+  border: 1px solid #ff52bf;
+  border-radius: 24px;
+  color: #ff52bf;
+  background-color: #f5faff;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.cto--empty:hover {
+  background-color: #ff52bf;
+  color: #f5faff;
+}
+.cto--colors {
+  background-color: #ff52bf;
+  color: #f5faff;
+}
+.cto--small {
+  border: 0;
+  margin: 0;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+
+.section--nums {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6em;
+}
+@media screen and (min-width: 376px) {
+  .section--nums {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+}
+@media screen and (min-width: 376px) {
+  .card {
+    margin-bottom: 12rem;
+    flex-wrap: wrap;
+    width: auto;
+  }
+}
+.card__img {
+  margin: 0;
+  align-self: flex-start;
+}
+.card__data {
+  margin: 0;
+  font-size: 4rem;
+}
+@media screen and (min-width: 376px) {
+  .card__data {
+    font-size: 6rem;
+  }
+}
+.card__text {
+  font-size: 1rem;
+  color: #a1a1a1;
+}
+@media screen and (min-width: 376px) {
+  .card__text {
+    font-size: 1.4rem;
+  }
+}
+.card:last-child {
+  margin-bottom: 12rem;
+}
+
+.section--right {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem;
+}
+@media screen and (min-width: 768px) {
+  .section--right {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.section--right:last-of-type {
+  margin-bottom: 0;
+}
+.section__img {
+  order: -1;
+}
+@media screen and (min-width: 768px) {
+  .section__img {
+    order: 1;
+    flex: 1;
+  }
+}
+.section__texts {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2em;
+}
+@media screen and (min-width: 768px) {
+  .section__texts {
+    align-items: flex-start;
+  }
+}
+.section__title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (min-width: 376px) {
+  .section__title {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+}
+.section__text {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 1023px) {
+  .section__text {
+    font-size: 1rem;
+    text-align: left;
+    width: 500px;
+  }
+}
+.section--left {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+@media screen and (min-width: 768px) {
+  .section--left {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 376px) {
+  .section--left > .section__img {
+    order: -1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .section--left > .section__texts > .section__text {
+    width: 540px;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  gap: 4em 0;
+  padding: 2em 4.2rem;
+  color: #f5faff;
+  background-color: #00252e;
+  font-weight: 600;
+}
+@media screen and (min-width: 375px) {
+  .footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+.footer__subscribe {
+  order: -1;
+  max-width: 280px;
+}
+@media screen and (min-width: 376px) {
+  .footer__subscribe {
+    order: 1;
+    max-width: 36%;
+  }
+}
+.footer__subscribe__description {
+  font-weight: 400;
+}
+@media screen and (min-width: 376px) {
+  .footer__subscribe__description {
+    order: 1;
+    max-width: 82%;
+  }
+}
+.footer__subscribe__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+@media screen and (min-width: 375px) {
+  .footer__subscribe__form {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+.footer__subscribe__form > .cto--small {
+  align-self: flex-end;
+}
+.footer__subscribe__form > .input {
+  padding: 0.5em;
+}
+@media screen and (min-width: 375px) {
+  .footer__subscribe__form > .input {
+    flex-grow: 1;
+  }
+}
+.footer__information {
+  max-width: 280px;
+}
+
+.box, .social {
+  display: flex;
+  align-items: center;
+  gap: 0 1em;
+}
+
+.social {
+  font-size: 1.3rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  list-style: none;
+  padding: 2em;
+}
+@media screen and (min-width: 376px) {
+  .menu {
+    padding: 0 2em;
+    margin-bottom: 6rem;
+  }
+}
+
+.brand {
+  height: 20px;
+}
+@media screen and (min-width: 376px) {
+  .brand {
+    height: 30px;
+  }
+}
+
+.figure {
+  margin: 0;
+}
+
+.img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 6em;
+}
+@media screen and (min-width: 376px) {
+  .hero {
+    gap: 0.5em;
+  }
+}
+.hero__title {
+  padding: 0 3.8em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 376px) {
+  .hero__title {
+    font-size: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+}
+.hero__legend {
+  padding: 0 1.6rem;
+  color: #00252e;
+  font-weight: 400;
+  margin-bottom: 2.6em;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+  .hero__legend {
+    width: 440px;
+    padding: 0;
+  }
+}
+.hero__img {
+  padding: 0 3.8em;
+}
+.hero__btn {
+  margin-bottom: 6em;
+}
+
+.mesagge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 50vh;
+}
+@media screen and (min-width: 375px) {
+  .mesagge {
+    height: 100vh;
+  }
+}
+.mesagge__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 375px) {
+  .mesagge__title {
+    font-size: 1.7rem;
+  }
+}
+.mesagge::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 52px;
+  width: 100%;
+  background-image: url(../images/bg-footer-top-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (min-width: 375px) {
+  .mesagge::after {
+    background-image: url(../images/bg-footer-top-desktop.svg);
+    height: 158px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

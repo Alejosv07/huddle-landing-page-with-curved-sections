@@ -1,0 +1,47 @@
+@use "color" as c;
+
+.section--nums{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6em;
+    @media screen and (min-width: 376px) {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    @media screen and (min-width: 376px) {
+        margin-bottom: 12rem;
+        flex-wrap: wrap;
+        width: auto;
+    }
+    &__img{
+        margin: 0;
+        align-self: flex-start;
+    }
+    &__data{
+        margin: 0;
+        font-size: 4rem;
+        @media screen and (min-width: 376px) {
+            font-size: 6rem;
+        }
+    }
+    &__text{
+        font-size: 1rem;
+        color: #a1a1a1;
+        @media screen and (min-width: 376px) {
+            font-size: 1.4rem;
+        }
+    }
+    &:last-child{
+        margin-bottom: 12rem;
+    }
+}

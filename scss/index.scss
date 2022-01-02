@@ -1,0 +1,134 @@
+@use "btn";
+@use "color";
+@use "cardSpecs";
+@use "section.scss";
+@use "footer";
+
+$font-body: 'Open Sans', sans-serif;
+$font-title: 'Poppins', sans-serif;
+$padding-side: 2em;
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-body;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    list-style: none;
+    padding: $padding-side;
+    @media screen and (min-width: 376px){
+        padding: 0 2em;
+        margin-bottom: 6rem;
+    }
+}
+
+.brand{
+    height: 20px;
+    @media screen and (min-width: 376px){
+        height: 30px;
+    }
+}
+
+.figure{
+    margin: 0;
+}
+
+.img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 6em;
+    
+    @media screen and (min-width: 376px){
+        gap: 0.5em;
+    }
+
+    &__title{
+        padding: 0 $padding-side + 1.8;    
+        font-family: $font-title;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.2rem;
+        
+        @media screen and (min-width: 376px){
+            font-size: 3em;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+    }
+    
+    &__legend{
+        padding: 0 1.6rem;    
+        color: color.$VeryDarkCyan;
+        font-weight: 400;
+        margin-bottom: 2.6em;
+        text-align: center;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        @media screen and (min-width: 768px){
+            width: 440px;
+            padding: 0;    
+        }
+    }
+    &__img{
+        padding: 0 $padding-side + 1.8;
+    }
+    
+    &__btn{
+        margin-bottom: 6em;
+    }
+}
+
+.mesagge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 50vh;
+    @media screen and (min-width: 375px){
+        height: 100vh;
+    }
+    
+    &__title{
+        font-family: $font-title;
+        font-weight: 700;
+        text-align: center;
+        font-size: 1.4rem;
+        @media screen and (min-width: 375px){
+            font-size: 1.7rem;
+        }
+    }
+
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 52px;
+        width: 100%;
+        background-image: url(../images/bg-footer-top-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        @media screen and (min-width: 375px){
+            background-image: url(../images/bg-footer-top-desktop.svg);
+            height: 158px;
+        }
+    }
+}
