@@ -23,7 +23,7 @@ body{
     padding: 0 1.6rem;
     list-style: none;
     padding: $padding-side;
-    @media screen and (min-width: 376px){
+    @media screen and (min-width: 768px){
         padding: 2em 4em;
         margin-bottom: 12rem;
     }
@@ -31,7 +31,7 @@ body{
 
 .brand{
     height: 20px;
-    @media screen and (min-width: 376px){
+    @media screen and (min-width: 768px){
         height: 40px;
     }
 }
@@ -52,7 +52,7 @@ body{
     gap: 1em;
     margin-bottom: 6em;
     
-    @media screen and (min-width: 376px){
+    @media screen and (min-width: 768px){
         gap: 0.5em;
     }
 
@@ -63,7 +63,7 @@ body{
         font-weight: 700;
         text-align: center;
         font-size: 1.2rem;
-        @media screen and (min-width: 376px){
+        @media screen and (min-width: 768px){
             font-size: 3em;
             display: flex;
             flex-wrap: wrap;
@@ -101,7 +101,7 @@ body{
     position: relative;
     height: 50vh;
     padding: 0 4em;
-    @media screen and (min-width: 375px){
+    @media screen and (min-width: 768px){
         height: 100vh;
     }
     
@@ -110,7 +110,7 @@ body{
         font-weight: 700;
         text-align: center;
         font-size: 1.4rem;
-        @media screen and (min-width: 375px){
+        @media screen and (min-width: 768px){
             font-size: 2.4rem;
         }
     }
@@ -127,7 +127,7 @@ body{
         background-repeat: no-repeat;
         background-size: cover;
         
-        @media screen and (min-width: 375px){
+        @media screen and (min-width: 768px){
             background-image: url(../images/bg-footer-top-desktop.svg);
             height: 158px;
         }
