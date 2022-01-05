@@ -390,4 +390,14 @@ body {
   }
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #ff52bf;
+}
+
 /*# sourceMappingURL=index.css.map */
